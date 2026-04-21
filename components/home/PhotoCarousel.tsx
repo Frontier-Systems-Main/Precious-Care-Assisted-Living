@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { cn } from "@/lib/utils";
 
@@ -53,6 +53,7 @@ const slides = [
 
 export function PhotoCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const interval = window.setInterval(() => {
@@ -62,15 +63,41 @@ export function PhotoCarousel() {
     return () => window.clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 639px)");
+
+    const syncViewport = () => setIsMobile(mediaQuery.matches);
+
+    syncViewport();
+
+    mediaQuery.addEventListener("change", syncViewport);
+
+    return () => mediaQuery.removeEventListener("change", syncViewport);
+  }, []);
+
   const goTo = (index: number) => setActiveIndex(index);
   const previous = () =>
     setActiveIndex((current) => (current - 1 + slides.length) % slides.length);
   const next = () => setActiveIndex((current) => (current + 1) % slides.length);
 
+  const renderedSlideIndexes = useMemo(() => {
+    if (!isMobile) {
+      return slides.map((_, index) => index);
+    }
+
+    const previousIndex = (activeIndex - 1 + slides.length) % slides.length;
+    const nextIndex = (activeIndex + 1) % slides.length;
+
+    return [previousIndex, activeIndex, nextIndex];
+  }, [activeIndex, isMobile]);
+
   return (
     <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/55 shadow-glow backdrop-blur-xl">
       <div className="relative h-[26rem] overflow-hidden sm:h-[30rem]">
-        {slides.map((slide, index) => (
+        {renderedSlideIndexes.map((index) => {
+          const slide = slides[index];
+
+          return (
           <div
             key={slide.src}
             className={cn(
@@ -99,7 +126,8 @@ export function PhotoCarousel() {
               </p>
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
 
       <div className="pointer-events-none absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-4">
@@ -121,7 +149,7 @@ export function PhotoCarousel() {
         </button>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 p-4 sm:grid-cols-4 lg:grid-cols-7">
+      <div className="hidden grid-cols-3 gap-2 p-4 sm:grid sm:grid-cols-4 lg:grid-cols-7">
         {slides.map((slide, index) => (
           <button
             key={slide.src}
