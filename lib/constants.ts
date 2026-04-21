@@ -85,7 +85,7 @@ export function buildMetadata(
 }
 
 export const HOME_HERO = {
-  headline: "Compassionate assisted living in Anchorage, Alaska",
+  headline: "Compassionate Care, Close to Home",
   subheadline: "Family-owned, home-like care centered on comfort, safety, and companionship.",
 } as const;
 
