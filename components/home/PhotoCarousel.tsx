@@ -92,8 +92,8 @@ export function PhotoCarousel() {
   }, [activeIndex, isMobile]);
 
   return (
-    <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/55 shadow-glow backdrop-blur-xl">
-      <div className="relative h-[26rem] overflow-hidden sm:h-[30rem]">
+    <div className="relative overflow-hidden rounded-[1.75rem] border border-white/70 bg-white/70 shadow-glow sm:rounded-[2rem] sm:bg-white/55 sm:backdrop-blur-xl">
+      <div className="relative h-[20rem] overflow-hidden sm:h-[30rem]">
         {renderedSlideIndexes.map((index) => {
           const slide = slides[index];
 
@@ -117,11 +117,11 @@ export function PhotoCarousel() {
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06293f]/82 via-[#06293f]/24 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-6 text-center text-white sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/72">
+            <div className="absolute inset-x-0 bottom-0 p-4 text-center text-white sm:p-8">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/72 sm:text-sm sm:tracking-[0.24em]">
                 {slide.label}
               </p>
-              <p className="mt-3 font-heading text-3xl leading-tight sm:text-4xl">
+              <p className="mt-2 font-heading text-[1.55rem] leading-tight sm:mt-3 sm:text-4xl">
                 {slide.description}
               </p>
             </div>
@@ -130,22 +130,22 @@ export function PhotoCarousel() {
         })}
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-4">
+      <div className="pointer-events-none absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-3 sm:px-4">
         <button
           type="button"
           onClick={previous}
-          className="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-[#06293f]/58 text-white backdrop-blur transition-transform hover:scale-105"
+          className="pointer-events-auto inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/25 bg-[#06293f]/58 text-white transition-transform hover:scale-105 sm:h-11 sm:w-11 sm:backdrop-blur"
           aria-label="Previous photo"
         >
-          <ChevronLeft className="h-5 w-5" aria-hidden="true" />
+          <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
         </button>
         <button
           type="button"
           onClick={next}
-          className="pointer-events-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-[#06293f]/58 text-white backdrop-blur transition-transform hover:scale-105"
+          className="pointer-events-auto inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/25 bg-[#06293f]/58 text-white transition-transform hover:scale-105 sm:h-11 sm:w-11 sm:backdrop-blur"
           aria-label="Next photo"
         >
-          <ChevronRight className="h-5 w-5" aria-hidden="true" />
+          <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
         </button>
       </div>
 

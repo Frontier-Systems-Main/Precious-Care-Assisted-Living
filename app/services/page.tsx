@@ -48,12 +48,12 @@ export default function ServicesPage() {
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <ScrollReveal
             direction="left"
-            className="rounded-[2rem] bg-[#063550] p-8 text-white shadow-glow"
+            className="rounded-[1.7rem] bg-[#063550] p-5 text-white shadow-glow sm:rounded-[2rem] sm:p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/65 sm:text-sm sm:tracking-[0.2em]">
               Getting to Know Each Resident
             </p>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-white/82">
+            <div className="mt-4 space-y-4 text-base leading-7 text-white/82 sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 Before a resident moves in, we take time to learn about their
                 background, routines, preferences, and any specific care
@@ -71,7 +71,7 @@ export default function ServicesPage() {
                 resident live as fully, comfortably, and joyfully as possible.
               </p>
             </div>
-            <div className="mt-8 overflow-hidden rounded-[1.5rem] border border-white/10">
+            <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/10 sm:mt-8 sm:rounded-[1.5rem]">
               <Image
                 src="/photos/home-3.png"
                 alt="Living space photo for Precious Care Assisted Living Facility"
@@ -90,17 +90,17 @@ export default function ServicesPage() {
                   key={card.title}
                   delay={index * 80}
                   direction="right"
-                  className="rounded-[1.75rem] border border-white/60 bg-white/84 p-6 shadow-sm backdrop-blur"
+                  className="rounded-[1.5rem] border border-white/60 bg-white/84 p-5 shadow-sm backdrop-blur sm:rounded-[1.75rem] sm:p-6"
                 >
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div>
-                      <h2 className="font-heading text-2xl text-foreground">
+                      <h2 className="font-heading text-[1.55rem] text-foreground sm:text-2xl">
                         {card.title}
                       </h2>
-                      <p className="mt-3 text-lg leading-8 text-muted-foreground">
+                      <p className="mt-2 text-base leading-7 text-muted-foreground sm:mt-3 sm:text-lg sm:leading-8">
                         {card.text}
                       </p>
                     </div>
@@ -121,22 +121,22 @@ export default function ServicesPage() {
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <ScrollReveal
             direction="left"
-            className="rounded-[2rem] border border-border/60 bg-[#edf4fb] p-8 shadow-glow"
+            className="rounded-[1.7rem] border border-border/60 bg-[#edf4fb] p-5 shadow-glow sm:rounded-[2rem] sm:p-8"
           >
-            <div className="mb-6 flex items-center gap-3">
+            <div className="mb-4 flex items-center gap-3 sm:mb-6">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#063550] text-white">
                 <MessageCircleQuestion className="h-6 w-6" aria-hidden="true" />
               </div>
-              <p className="font-heading text-2xl text-[#063550]">
+              <p className="font-heading text-[1.55rem] text-[#063550] sm:text-2xl">
                 Helpful conversation starters
               </p>
             </div>
-            <ul className="space-y-4 text-lg leading-8 text-[#24475f]">
+            <ul className="space-y-3 text-base leading-7 text-[#24475f] sm:space-y-4 sm:text-lg sm:leading-8">
               {questions.map((question) => (
                 <li key={question}>{question}</li>
               ))}
             </ul>
-            <p className="mt-6 text-base leading-7 text-[#4b6476]">
+            <p className="mt-5 text-sm leading-6 text-[#4b6476] sm:mt-6 sm:text-base sm:leading-7">
               A direct conversation is still the best way to confirm
               availability, routines, and the right fit for your loved one.
             </p>
@@ -145,16 +145,16 @@ export default function ServicesPage() {
           <ScrollReveal
             delay={120}
             direction="right"
-            className="rounded-[2rem] border border-[#ecd6e4] bg-[#fff4fb]/88 p-8 shadow-sm"
+            className="rounded-[1.7rem] border border-[#ecd6e4] bg-[#fff4fb]/88 p-5 shadow-sm sm:rounded-[2rem] sm:p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c1358e]">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-[#c1358e] sm:text-sm sm:tracking-[0.2em]">
               Practical reminder
             </p>
-            <p className="mt-5 font-heading text-3xl leading-tight text-[#063550]">
+            <p className="mt-4 font-heading text-[1.8rem] leading-tight text-[#063550] sm:mt-5 sm:text-3xl">
               Good assisted living decisions usually come from a blend of facts
               and feeling.
             </p>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-[#35556b]">
+            <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 Families often need straightforward information first, but they
                 also need a sense of whether a place feels calm, respectful, and

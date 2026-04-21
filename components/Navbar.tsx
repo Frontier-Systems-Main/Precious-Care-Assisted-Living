@@ -23,15 +23,15 @@ export function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="pointer-events-none fixed inset-x-0 top-4 z-50">
-      <div className="mx-auto w-full max-w-[58rem] px-4 sm:px-6 lg:px-8">
-        <div className="pointer-events-auto h-[3.3rem] overflow-visible rounded-full border border-white bg-white px-3 shadow-[0_20px_50px_rgba(6,53,80,0.16)]">
-        <div className="flex h-full items-center justify-between gap-3">
+    <header className="pointer-events-none fixed inset-x-0 top-3 z-50 sm:top-4">
+      <div className="mx-auto w-full max-w-[58rem] px-3 sm:px-6 lg:px-8">
+        <div className="pointer-events-auto h-[3.15rem] overflow-visible rounded-full border border-white bg-white px-2.5 shadow-[0_20px_50px_rgba(6,53,80,0.16)] sm:h-[3.3rem] sm:px-3">
+        <div className="flex h-full items-center justify-between gap-2 sm:gap-3">
           <Link
             href="/"
-            className="ml-3 flex items-center self-center rounded-2xl transition-colors hover:text-primary sm:ml-4"
+            className="ml-2 flex items-center self-center rounded-2xl transition-colors hover:text-primary sm:ml-4"
           >
-            <div className="translate-y-[5px] w-[8.4rem] sm:w-[9.45rem]">
+            <div className="translate-y-[4px] w-[7.8rem] sm:translate-y-[5px] sm:w-[9.45rem]">
               <Image
                 src="/icon/precious-care-landscape-v2.svg"
                 alt={BUSINESS.name}
@@ -88,7 +88,7 @@ export function Navbar() {
 
           <button
             type="button"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-border/60 bg-white/90 text-foreground shadow-sm transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:hidden"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-border/60 bg-white text-foreground shadow-sm transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring md:hidden"
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
@@ -106,7 +106,7 @@ export function Navbar() {
         {isMobileMenuOpen ? (
           <div
             id="mobile-navigation"
-            className="pointer-events-auto mt-3 rounded-[1.75rem] border border-border/60 bg-white p-4 shadow-glow md:hidden"
+            className="pointer-events-auto mt-3 rounded-[1.5rem] border border-border/60 bg-white p-3.5 shadow-glow md:hidden"
           >
             <nav aria-label="Mobile primary" className="flex flex-col gap-2">
               {NAV_ITEMS.map((item) => {
@@ -118,7 +118,7 @@ export function Navbar() {
                     href={item.href}
                     aria-current={isActive ? "page" : undefined}
                     className={cn(
-                      "inline-flex items-center rounded-2xl px-4 py-3 text-[1.02rem] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                      "inline-flex items-center rounded-2xl px-4 py-2.5 text-[0.98rem] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                       isActive
                         ? "bg-primary text-primary-foreground shadow-sm"
                         : "text-foreground hover:bg-accent",
@@ -135,7 +135,7 @@ export function Navbar() {
                 );
               })}
             </nav>
-            <div className="mt-4 space-y-3 rounded-[1.5rem] border border-border/60 bg-[#f9edf5] p-4 text-sm text-[#24475f]">
+            <div className="mt-3.5 space-y-3 rounded-[1.35rem] border border-border/60 bg-[#f9edf5] p-4 text-sm text-[#24475f]">
               <a
                 href={BUSINESS.contact.phoneHref}
                 className="flex items-center gap-3 transition-colors hover:text-primary"
@@ -160,7 +160,7 @@ export function Navbar() {
                 <span>{BUSINESS.address}</span>
               </a>
             </div>
-            <Button asChild variant="secondary" className="mt-4 w-full">
+            <Button asChild variant="secondary" className="mt-3.5 w-full">
               <Link href="/contact">Schedule a Tour</Link>
             </Button>
           </div>

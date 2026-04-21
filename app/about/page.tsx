@@ -53,12 +53,12 @@ export default function AboutPage() {
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <ScrollReveal
             direction="left"
-            className="rounded-[2rem] border border-border/60 bg-white/85 p-8 shadow-glow backdrop-blur"
+            className="rounded-[1.7rem] border border-border/60 bg-white/85 p-5 shadow-glow backdrop-blur sm:rounded-[2rem] sm:p-8"
           >
-            <p className="font-heading text-3xl leading-tight text-foreground">
+            <p className="font-heading text-[1.8rem] leading-tight text-foreground sm:text-3xl">
               Rooted in Anchorage, built on family values.
             </p>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-muted-foreground">
+            <div className="mt-4 space-y-4 text-base leading-7 text-muted-foreground sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 Precious Care Assisted Living was founded on a simple but
                 powerful belief: seniors deserve to live in an environment
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 and surroundings that make Alaska so special.
               </p>
             </div>
-            <div className="mt-8 overflow-hidden rounded-[1.5rem] border border-white/60">
+            <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/60 sm:mt-8 sm:rounded-[1.5rem]">
               <Image
                 src="/photos/home-6.png"
                 alt="Interior photo for Precious Care Assisted Living Facility"
@@ -90,7 +90,7 @@ export default function AboutPage() {
           <ScrollReveal
             delay={120}
             direction="right"
-            className="relative overflow-hidden rounded-[2rem] bg-[#063550] p-8 text-white shadow-glow"
+            className="relative overflow-hidden rounded-[1.7rem] bg-[#063550] p-5 text-white shadow-glow sm:rounded-[2rem] sm:p-8"
           >
             <div
               className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#ff9fd3]/18 blur-3xl"
@@ -101,31 +101,31 @@ export default function AboutPage() {
               aria-hidden="true"
             />
             <div className="relative">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/65 sm:text-sm sm:tracking-[0.2em]">
                 Our Mission
               </p>
-              <h2 className="mt-4 font-heading text-3xl leading-tight text-white">
+              <h2 className="mt-3 font-heading text-[1.8rem] leading-tight text-white sm:mt-4 sm:text-3xl">
                 Caring for each person as an individual
               </h2>
-              <p className="mt-4 max-w-md text-base leading-7 text-white/78">
+              <p className="mt-3 max-w-md text-sm leading-6 text-white/78 sm:mt-4 sm:text-base sm:leading-7">
                 Our mission is to provide compassionate, personalized assisted
                 living care that honors each resident's dignity, supports their
                 comfort, and nurtures a sense of belonging — all within a safe,
                 home-like environment in Anchorage, Alaska.
               </p>
 
-              <div className="mt-8 rounded-[1.5rem] bg-white/8 p-5 backdrop-blur-sm">
+              <div className="mt-6 rounded-[1.35rem] bg-white/8 p-4 backdrop-blur-sm sm:mt-8 sm:rounded-[1.5rem] sm:p-5">
                 <ul className="space-y-4">
                   {missionPoints.map((point) => (
                     <li
                       key={point}
-                      className="flex items-start gap-3 rounded-[1.15rem] border border-white/10 bg-white/5 px-4 py-3"
+                        className="flex items-start gap-3 rounded-[1rem] border border-white/10 bg-white/5 px-4 py-3 sm:rounded-[1.15rem]"
                     >
                       <span
                         className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full bg-[#ff9fd3]"
                         aria-hidden="true"
                       />
-                      <span className="text-lg leading-8 text-white/92">
+                      <span className="text-base leading-7 text-white/92 sm:text-lg sm:leading-8">
                         {point}
                       </span>
                     </li>
@@ -151,17 +151,17 @@ export default function AboutPage() {
                 <ScrollReveal
                   key={item.title}
                   delay={index * 80}
-                  className="rounded-[1.75rem] border border-white/60 bg-white/84 p-6 shadow-sm backdrop-blur"
+                  className="rounded-[1.5rem] border border-white/60 bg-white/84 p-5 shadow-sm backdrop-blur sm:rounded-[1.75rem] sm:p-6"
                 >
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div>
-                      <h2 className="font-heading text-2xl text-foreground">
+                      <h2 className="font-heading text-[1.55rem] text-foreground sm:text-2xl">
                         {item.title}
                       </h2>
-                      <p className="mt-3 text-lg leading-8 text-muted-foreground">
+                      <p className="mt-2 text-base leading-7 text-muted-foreground sm:mt-3 sm:text-lg sm:leading-8">
                         {item.body}
                       </p>
                     </div>
@@ -174,16 +174,16 @@ export default function AboutPage() {
           <ScrollReveal
             delay={120}
             direction="right"
-            className="rounded-[2rem] border border-[#e3dbe2] bg-[#eef5fb]/88 p-8 shadow-glow"
+            className="rounded-[1.7rem] border border-[#e3dbe2] bg-[#eef5fb]/88 p-5 shadow-glow sm:rounded-[2rem] sm:p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#48687c]">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-[#48687c] sm:text-sm sm:tracking-[0.2em]">
               Anchorage roots
             </p>
-            <p className="mt-5 font-heading text-3xl leading-tight text-[#063550]">
+            <p className="mt-4 font-heading text-[1.8rem] leading-tight text-[#063550] sm:mt-5 sm:text-3xl">
               Being based in Anchorage helps residents stay close to their city,
               their community, and the people who matter most.
             </p>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-[#35556b]">
+            <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 Families can visit more easily, and residents can remain
                 connected to the routines, relationships, and local familiarity

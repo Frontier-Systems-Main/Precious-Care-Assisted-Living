@@ -67,23 +67,22 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
           <ScrollReveal
             direction="left"
-            className="rounded-[2rem] border border-white/60 bg-white/82 p-8 text-center shadow-glow backdrop-blur"
+            className="rounded-[1.7rem] border border-white/60 bg-white/82 p-5 text-center shadow-glow backdrop-blur sm:rounded-[2rem] sm:p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c1358e]">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-[#c1358e] sm:text-sm sm:tracking-[0.2em]">
               Support That's Tailored to Each Resident
             </p>
-            <p className="mt-5 font-heading text-3xl leading-tight text-foreground">
-              Families choose Precious Care because they want more than a place
-              to live.
+            <p className="mt-4 font-heading text-[1.8rem] leading-tight text-foreground sm:mt-5 sm:text-3xl">
+              A Place That Truly Feels Like Home
             </p>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-muted-foreground">
+            <div className="mt-4 space-y-4 text-base leading-7 text-muted-foreground sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 Families choose Precious Care because they want more than a
                 place to live — they want a community where their loved one is
                 genuinely cared for and respected.
               </p>
             </div>
-            <ul className="mt-6 space-y-3 text-left text-base leading-7 text-[#4b6476]">
+            <ul className="mt-5 space-y-3 text-left text-sm leading-6 text-[#4b6476] sm:mt-6 sm:text-base sm:leading-7">
               {[
                 "Individualized attention in a small, home-like setting",
                 "Compassionate staff committed to resident well-being",
@@ -106,7 +105,7 @@ export default function HomePage() {
           <ScrollReveal
             delay={120}
             direction="right"
-            className="rounded-[2rem] bg-[#063550] p-6 text-white shadow-glow"
+            className="rounded-[1.7rem] bg-[#063550] p-5 text-white shadow-glow sm:rounded-[2rem] sm:p-6"
           >
             <div className="grid gap-4">
               {trustItems.map((item, index) => {
@@ -116,16 +115,16 @@ export default function HomePage() {
                     key={item.title}
                     delay={index * 70}
                     direction="up"
-                    className="flex flex-col items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/6 p-5 text-center backdrop-blur-sm"
+                    className="flex flex-col items-center gap-4 rounded-[1.35rem] border border-white/10 bg-white/6 p-4 text-center backdrop-blur-sm sm:rounded-[1.5rem] sm:p-5"
                   >
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-white">
                       <Icon className="h-6 w-6" aria-hidden="true" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-2xl text-white">
+                      <h3 className="font-heading text-[1.55rem] text-white sm:text-2xl">
                         {item.title}
                       </h3>
-                      <p className="mt-2 text-base leading-7 text-white/78">
+                      <p className="mt-2 text-sm leading-6 text-white/78 sm:text-base sm:leading-7">
                         {item.description}
                       </p>
                     </div>
@@ -146,12 +145,12 @@ export default function HomePage() {
         <div className="grid gap-6 lg:grid-cols-[0.98fr_1.02fr]">
           <ScrollReveal
             direction="left"
-            className="rounded-[2rem] bg-[#063550] p-8 text-center text-white shadow-glow"
+            className="rounded-[1.7rem] bg-[#063550] p-5 text-center text-white shadow-glow sm:rounded-[2rem] sm:p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-white/65 sm:text-sm sm:tracking-[0.2em]">
               What a first conversation can cover
             </p>
-            <div className="mt-6 space-y-5">
+            <div className="mt-4 space-y-4 sm:mt-6 sm:space-y-5">
               {[
                 "Whether the home-like setting feels aligned with what your loved one needs",
                 "The day-to-day support areas families usually want to understand first",
@@ -160,12 +159,12 @@ export default function HomePage() {
                 <ScrollReveal
                   key={item}
                   delay={index * 80}
-                  className="flex flex-col items-center gap-4 rounded-[1.5rem] border border-white/10 bg-white/6 p-5 text-center"
+                  className="flex flex-col items-center gap-3 rounded-[1.35rem] border border-white/10 bg-white/6 p-4 text-center sm:gap-4 sm:rounded-[1.5rem] sm:p-5"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ff66c4] font-semibold text-[#063550]">
                     {index + 1}
                   </div>
-                  <p className="text-lg leading-8 text-white/82">{item}</p>
+                  <p className="text-base leading-7 text-white/82 sm:text-lg sm:leading-8">{item}</p>
                 </ScrollReveal>
               ))}
             </div>
@@ -173,15 +172,15 @@ export default function HomePage() {
           <ScrollReveal
             delay={120}
             direction="right"
-            className="rounded-[2rem] border border-[#ecd6e4] bg-[#fff4fb]/88 p-8 shadow-sm"
+            className="rounded-[1.7rem] border border-[#ecd6e4] bg-[#fff4fb]/88 p-5 shadow-sm sm:rounded-[2rem] sm:p-8"
           >
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c1358e]">
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-[#c1358e] sm:text-sm sm:tracking-[0.2em]">
               Resident-Centered Living in Anchorage
             </p>
-            <p className="mt-5 font-heading text-3xl leading-tight text-[#063550]">
+            <p className="mt-4 font-heading text-[1.8rem] leading-tight text-[#063550] sm:mt-5 sm:text-3xl">
               Care begins with knowing the individual.
             </p>
-            <div className="mt-6 space-y-4 text-lg leading-8 text-[#35556b]">
+            <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 At Precious Care, we believe that quality care starts with truly
                 knowing each resident — their life story, their preferences,

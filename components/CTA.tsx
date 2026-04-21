@@ -25,9 +25,9 @@ export function CTA({
   points,
 }: CTAProps) {
   return (
-    <section className="px-6 py-20 lg:px-8">
+    <section className="px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
       <div className="mx-auto w-full max-w-7xl">
-        <div className="relative overflow-hidden rounded-[2.25rem] bg-[#063550] px-8 py-10 text-white shadow-glow sm:px-10 sm:py-12">
+        <div className="relative overflow-hidden rounded-[1.85rem] bg-[#063550] px-5 py-8 text-white shadow-glow sm:rounded-[2.25rem] sm:px-10 sm:py-12">
           <div
             className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[#ff66c4]/25 blur-3xl"
             aria-hidden="true"
@@ -41,23 +41,23 @@ export function CTA({
               direction="left"
               className="text-center lg:text-left"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/65">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-white/65 sm:text-sm sm:tracking-[0.24em]">
                 {eyebrow}
               </p>
-              <h2 className="mt-4 max-w-3xl font-heading text-4xl leading-tight sm:text-5xl">
+              <h2 className="mt-3 max-w-3xl font-heading text-[2rem] leading-tight sm:mt-4 sm:text-4xl lg:text-5xl">
                 {title}
               </h2>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/78">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/78 sm:mt-5 sm:text-lg sm:leading-8">
                 {description}
               </p>
             </ScrollReveal>
             <ScrollReveal
               delay={120}
               direction="right"
-              className="rounded-[1.75rem] border border-white/10 bg-white/6 p-6 text-center backdrop-blur-sm"
+              className="rounded-[1.5rem] border border-white/10 bg-white/6 p-5 text-center backdrop-blur-sm sm:rounded-[1.75rem] sm:p-6"
             >
               {points?.length ? (
-                <ul className="mb-6 space-y-3 text-base leading-7 text-white/80">
+                <ul className="mb-5 space-y-3 text-sm leading-6 text-white/80 sm:mb-6 sm:text-base sm:leading-7">
                   {points.map((point) => (
                     <li key={point} className="flex items-start gap-3">
                       <span
@@ -69,12 +69,12 @@ export function CTA({
                   ))}
                 </ul>
               ) : null}
-              <div className="flex flex-wrap justify-center gap-4">
-                <Button asChild size="lg" variant="secondary">
+              <div className="flex flex-col justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+                <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
                   <Link href={primaryHref}>{primaryLabel}</Link>
                 </Button>
                 {secondaryHref && secondaryLabel ? (
-                  <Button asChild size="lg" variant="ghost">
+                  <Button asChild size="lg" variant="ghost" className="w-full sm:w-auto">
                     <Link href={secondaryHref}>{secondaryLabel}</Link>
                   </Button>
                 ) : null}

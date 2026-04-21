@@ -52,7 +52,7 @@ export function ReviewCarousel() {
   };
 
   return (
-    <div className="relative overflow-hidden rounded-[2.25rem] bg-[#063550] px-6 py-8 text-white shadow-glow sm:px-8 sm:py-10">
+    <div className="relative overflow-hidden rounded-[1.85rem] bg-[#063550] px-4 py-6 text-white shadow-glow sm:rounded-[2.25rem] sm:px-8 sm:py-10">
       <div
         className="absolute -right-12 top-0 h-36 w-36 rounded-full bg-[#ff66c4]/20 blur-3xl"
         aria-hidden="true"
@@ -63,16 +63,16 @@ export function ReviewCarousel() {
       />
 
       <div className="relative mx-auto max-w-6xl">
-        <div className="mb-6 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/10">
-              <Quote className="h-6 w-6" aria-hidden="true" />
+        <div className="mb-5 flex items-center justify-between gap-3 sm:mb-6 sm:gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
+            <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 sm:h-14 sm:w-14">
+              <Quote className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
             </div>
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/62">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/62 sm:text-sm sm:tracking-[0.24em]">
                 Community feedback
               </p>
-              <p className="mt-1 font-heading text-2xl text-white sm:text-3xl">
+              <p className="mt-1 font-heading text-[1.65rem] leading-tight text-white sm:text-3xl">
                 What families appreciate most
               </p>
             </div>
@@ -98,7 +98,7 @@ export function ReviewCarousel() {
           </div>
         </div>
 
-        <div className="relative min-h-[22rem] overflow-hidden">
+        <div className="relative min-h-[21rem] overflow-hidden sm:min-h-[22rem]">
           {reviews.map((review, index) => {
             const relativePosition = getRelativePosition(index);
 
@@ -106,7 +106,7 @@ export function ReviewCarousel() {
               <article
                 key={review.name}
                 className={cn(
-                  "absolute top-0 w-full rounded-[1.85rem] border border-white/10 bg-white/8 p-6 text-center backdrop-blur-sm transition-all duration-500 sm:w-[68%] sm:p-8",
+                  "absolute top-0 w-full rounded-[1.5rem] border border-white/10 bg-white/8 p-5 text-center backdrop-blur-sm transition-all duration-500 sm:w-[68%] sm:rounded-[1.85rem] sm:p-8",
                   relativePosition === 0 &&
                     "left-1/2 z-20 -translate-x-1/2 scale-100 opacity-100 shadow-[0_20px_60px_rgba(0,0,0,0.18)]",
                   relativePosition === -1 &&
@@ -129,17 +129,17 @@ export function ReviewCarousel() {
                 <p className="mt-3 text-sm font-semibold uppercase tracking-[0.24em] text-white/62">
                   {review.rating}.0 / 5.0 stars
                 </p>
-                <h3 className="mt-4 font-heading text-3xl leading-tight sm:text-4xl">
+                <h3 className="mt-3 font-heading text-[1.8rem] leading-tight sm:mt-4 sm:text-4xl">
                   {review.name}
                 </h3>
-                <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
+                <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/80 sm:mt-5 sm:text-xl sm:leading-8">
                   “{review.quote}”
                 </p>
               </article>
             );
           })}
         </div>
-        <div className="mt-6 flex items-center justify-center gap-4 sm:mt-5">
+        <div className="mt-5 flex items-center justify-center gap-3 sm:mt-5 sm:gap-4">
           <button
             type="button"
             onClick={previous}

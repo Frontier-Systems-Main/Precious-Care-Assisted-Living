@@ -42,31 +42,31 @@ export function FaqAccordion() {
         return (
           <div
             key={item.question}
-            className="rounded-[1.75rem] border border-white/60 bg-white/84 shadow-sm backdrop-blur"
+            className="rounded-[1.4rem] border border-white/60 bg-white/84 shadow-sm backdrop-blur sm:rounded-[1.75rem]"
           >
             <button
               type="button"
               onClick={() => setOpenIndex(isOpen ? -1 : index)}
-              className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
+              className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:gap-4 sm:px-6 sm:py-5"
               aria-expanded={isOpen}
             >
-              <span className="font-heading text-2xl leading-tight text-foreground">
+              <span className="font-heading text-[1.35rem] leading-tight text-foreground sm:text-2xl">
                 {item.question}
               </span>
-              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#f7e3ef] text-[#063550]">
+              <span className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f7e3ef] text-[#063550] sm:h-10 sm:w-10">
                 {isOpen ? (
-                  <Minus className="h-5 w-5" aria-hidden="true" />
+                  <Minus className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
                 ) : (
-                  <Plus className="h-5 w-5" aria-hidden="true" />
+                  <Plus className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
                 )}
               </span>
             </button>
             <div
-              className={`overflow-hidden px-6 transition-all duration-300 ${
-                isOpen ? "max-h-80 pb-6 opacity-100" : "max-h-0 pb-0 opacity-0"
+              className={`overflow-hidden px-4 transition-all duration-300 sm:px-6 ${
+                isOpen ? "max-h-[34rem] pb-5 opacity-100 sm:max-h-80 sm:pb-6" : "max-h-0 pb-0 opacity-0"
               }`}
             >
-              <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
+              <p className="max-w-3xl text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
                 {item.answer}
               </p>
             </div>

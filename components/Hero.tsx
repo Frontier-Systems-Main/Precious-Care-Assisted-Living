@@ -26,33 +26,33 @@ export function Hero() {
         className="absolute left-10 top-12 h-[28rem] w-[28rem] rounded-full bg-[#ff66c4]/14 blur-3xl"
         aria-hidden="true"
       />
-      <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-6 py-20 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-28">
+      <div className="relative mx-auto grid w-full max-w-7xl gap-8 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-28">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
           <ScrollReveal>
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#f0c6dd] bg-white/80 px-4 py-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#c1358e] shadow-sm backdrop-blur">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#f0c6dd] bg-white/80 px-3 py-1.5 text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-[#c1358e] shadow-sm backdrop-blur sm:px-4 sm:py-2 sm:text-sm sm:tracking-[0.18em]">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
               <span>{BUSINESS.location}</span>
             </div>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h1 className="mt-6 max-w-[18ch] text-balance font-heading text-[2rem] leading-[1.02] text-foreground sm:max-w-4xl sm:text-5xl sm:leading-[0.98] lg:text-6xl">
+            <h1 className="mt-5 max-w-[17ch] text-balance font-heading text-[2rem] leading-[1.02] text-foreground sm:mt-6 sm:max-w-4xl sm:text-5xl sm:leading-[0.98] lg:text-6xl">
               {HOME_HERO.headline}
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={160}>
-            <p className="mt-6 max-w-2xl text-xl leading-9 text-muted-foreground sm:text-2xl">
+            <p className="mt-4 max-w-xl text-base leading-7 text-muted-foreground sm:mt-6 sm:max-w-2xl sm:text-xl sm:leading-9 lg:text-2xl">
               {HOME_HERO.subheadline}
             </p>
           </ScrollReveal>
           <ScrollReveal delay={220}>
-            <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg">
+            <div className="mt-8 flex w-full flex-col justify-center gap-3 sm:mt-10 sm:w-auto sm:flex-row sm:flex-wrap sm:gap-4">
+            <Button asChild size="lg" className="w-full sm:w-auto">
               <Link href="/contact">
                 Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
               <Link href="/about">Learn Our Story</Link>
             </Button>
             </div>
@@ -61,7 +61,7 @@ export function Hero() {
             <ScrollReveal delay={260} direction="left">
               <a
                 href={BUSINESS.contact.phoneHref}
-                className="block rounded-[1.5rem] border border-white/70 bg-white/78 p-5 text-center shadow-sm backdrop-blur transition-transform hover:-translate-y-0.5"
+                className="block rounded-[1.35rem] border border-white/70 bg-white/78 p-4 text-center shadow-sm backdrop-blur transition-transform hover:-translate-y-0.5 sm:rounded-[1.5rem] sm:p-5"
               >
                 <div className="flex items-center justify-center gap-3 text-[#063550]">
                   <Phone className="h-5 w-5" aria-hidden="true" />
@@ -69,7 +69,7 @@ export function Hero() {
                     Call directly
                   </p>
                 </div>
-                <p className="mt-4 text-2xl font-semibold text-foreground">
+                <p className="mt-3 text-[1.4rem] font-semibold text-foreground sm:mt-4 sm:text-2xl">
                   {BUSINESS.contact.phone}
                 </p>
               </a>
@@ -77,7 +77,7 @@ export function Hero() {
             <ScrollReveal delay={320} direction="right">
               <a
                 href={BUSINESS.contact.emailHref}
-                className="block rounded-[1.5rem] border border-white/70 bg-[#fff4fb]/82 p-5 text-center shadow-sm backdrop-blur transition-transform hover:-translate-y-0.5"
+                className="block rounded-[1.35rem] border border-white/70 bg-[#fff4fb]/82 p-4 text-center shadow-sm backdrop-blur transition-transform hover:-translate-y-0.5 sm:rounded-[1.5rem] sm:p-5"
               >
                 <div className="flex items-center justify-center gap-3 text-[#063550]">
                   <Mail className="h-5 w-5" aria-hidden="true" />
@@ -85,7 +85,7 @@ export function Hero() {
                     Send a note
                   </p>
                 </div>
-                <p className="mt-4 text-lg font-semibold text-foreground">
+                <p className="mt-3 text-base font-semibold text-foreground sm:mt-4 sm:text-lg">
                   {BUSINESS.contact.email}
                 </p>
               </a>
@@ -94,24 +94,24 @@ export function Hero() {
         </div>
 
         <div className="grid gap-5">
-          <ScrollReveal direction="right" className="relative overflow-hidden rounded-[2rem] border border-white/70 shadow-glow">
+          <ScrollReveal direction="right" className="relative overflow-hidden rounded-[1.75rem] border border-white/70 shadow-glow sm:rounded-[2rem]">
             <Image
               src="/photos/care-team.jpg"
               alt="Care-focused photo for Precious Care Assisted Living Facility"
               width={5625}
               height={3750}
               priority
-              className="h-[24rem] w-full object-cover"
+              className="h-[19rem] w-full object-cover sm:h-[24rem]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06293f]/82 via-[#06293f]/28 to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 p-6 text-center text-white">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/72">
+            <div className="absolute inset-x-0 bottom-0 p-4 text-center text-white sm:p-6">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/72 sm:text-sm sm:tracking-[0.2em]">
                 Compassionate care
               </p>
-              <p className="mt-3 max-w-lg font-heading text-3xl leading-tight">
+              <p className="mx-auto mt-2 max-w-md font-heading text-[1.7rem] leading-tight sm:mt-3 sm:max-w-lg sm:text-3xl">
                 Support that feels personal, patient, and reassuring.
               </p>
-              <p className="mt-3 text-base leading-7 text-white/82">
+              <p className="mt-2 text-sm leading-6 text-white/82 sm:mt-3 sm:text-base sm:leading-7">
                 Precious Care is presented as a warm, home-like place where
                 dignity, comfort, and connection remain central to daily life.
               </p>
@@ -121,7 +121,7 @@ export function Hero() {
             <ScrollReveal
               delay={120}
               direction="left"
-              className="rounded-[1.75rem] border border-[#e6d7e2] bg-[#fdf0f8]/90 p-6 text-center shadow-sm"
+              className="rounded-[1.5rem] border border-[#e6d7e2] bg-[#fdf0f8]/90 p-5 text-center shadow-sm sm:rounded-[1.75rem] sm:p-6"
             >
               <div className="flex items-center justify-center gap-3 text-[#063550]">
                 <Heart className="h-5 w-5" aria-hidden="true" />
@@ -129,11 +129,11 @@ export function Hero() {
                   Family-owned setting
                 </p>
               </div>
-              <p className="mt-4 text-lg leading-8 text-[#063550]">
+              <p className="mt-3 text-base leading-7 text-[#063550] sm:mt-4 sm:text-lg sm:leading-8">
                 Family-owned care in a smaller setting where residents can feel
                 known, comfortable, and supported.
               </p>
-              <p className="mt-4 text-base leading-7 text-[#4b6476]">
+              <p className="mt-3 text-sm leading-6 text-[#4b6476] sm:mt-4 sm:text-base sm:leading-7">
                 The home-like environment is meant to feel calmer and more
                 personal than a larger institutional setting.
               </p>
@@ -141,17 +141,17 @@ export function Hero() {
             <ScrollReveal
               delay={180}
               direction="right"
-              className="rounded-[1.75rem] bg-[#063550] p-6 text-center text-white shadow-sm"
+              className="rounded-[1.5rem] bg-[#063550] p-5 text-center text-white shadow-sm sm:rounded-[1.75rem] sm:p-6"
             >
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/65">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-white/65 sm:text-sm sm:tracking-[0.2em]">
                 First steps
               </p>
-              <ul className="mt-4 space-y-3 text-base leading-7 text-white/80">
+              <ul className="mt-3 space-y-2.5 text-sm leading-6 text-white/80 sm:mt-4 sm:space-y-3 sm:text-base sm:leading-7">
                 <li>Ask practical questions about care and routines</li>
                 <li>See whether the setting feels right for your family</li>
                 <li>Schedule a conversation or visit when ready</li>
               </ul>
-              <div className="mt-5 flex items-start justify-center gap-3 text-white/72">
+              <div className="mt-4 flex items-start justify-center gap-3 text-white/72 sm:mt-5">
                 <MapPinned className="mt-0.5 h-5 w-5 shrink-0" aria-hidden="true" />
                 <p className="text-sm leading-6">{BUSINESS.address}</p>
               </div>
