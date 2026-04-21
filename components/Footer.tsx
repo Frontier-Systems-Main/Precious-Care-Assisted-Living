@@ -1,0 +1,96 @@
+import Link from "next/link";
+import Image from "next/image";
+import { Mail, MapPin, Phone } from "lucide-react";
+
+import { BUSINESS, NAV_ITEMS } from "@/lib/constants";
+
+export function Footer() {
+  return (
+    <footer className="border-t border-[#f5b8dd] bg-[#063550] text-white">
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 lg:px-8">
+        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.9fr_1fr]">
+          <div>
+            <div className="inline-flex rounded-[1.4rem] bg-white px-4 py-1.5 shadow-sm">
+              <div className="w-[11.5rem] sm:w-[13rem]">
+                <Image
+                  src="/icon/precious-care-landscape-v2.svg"
+                  alt={BUSINESS.name}
+                  width={520}
+                  height={190}
+                  className="h-auto w-full"
+                />
+              </div>
+            </div>
+            <p className="mt-7 max-w-md text-[0.94rem] leading-7 text-white/72">
+              A family-owned assisted living facility in Anchorage, Alaska,
+              dedicated to compassionate, personalized care in a warm,
+              home-like environment.
+            </p>
+          </div>
+
+          <div>
+            <p className="text-[1.05rem] font-semibold uppercase tracking-[0.16em] text-[#c1358e]">
+              Navigate
+            </p>
+            <ul className="mt-5 space-y-4">
+              {NAV_ITEMS.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                  className="text-[0.96rem] text-white/80 transition-colors hover:text-white"
+                >
+                  {item.label}
+                </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <p className="text-[1.05rem] font-semibold uppercase tracking-[0.16em] text-[#c1358e]">
+              Contact Us
+            </p>
+            <div className="mt-5 space-y-4 text-[0.94rem] text-white/80">
+              <div className="flex items-start gap-3">
+                <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#c1358e]" aria-hidden="true" />
+                <a
+                  href={BUSINESS.contact.mapUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors hover:text-white"
+                >
+                  {BUSINESS.address}
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <Phone className="mt-1 h-5 w-5 shrink-0 text-[#c1358e]" aria-hidden="true" />
+                <a
+                  href={BUSINESS.contact.phoneHref}
+                  className="transition-colors hover:text-white"
+                >
+                  {BUSINESS.contact.phone}
+                </a>
+              </div>
+              <div className="flex items-start gap-3">
+                <Mail className="mt-1 h-5 w-5 shrink-0 text-[#c1358e]" aria-hidden="true" />
+                <a
+                  href={BUSINESS.contact.emailHref}
+                  className="transition-colors hover:text-white"
+                >
+                  {BUSINESS.contact.email}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-white/12 pt-6">
+          <div className="flex flex-col gap-3 text-[0.86rem] text-white/45 sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 Precious Care Assisted Living. All rights reserved.</p>
+            <p>{BUSINESS.location}</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
