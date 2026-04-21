@@ -138,7 +138,7 @@ export default function HomePage() {
 
       <Section
         eyebrow="Care philosophy"
-        title="Personalized support in a smaller, residential-style setting"
+        title="Supportive Living, Every Day"
         description="Precious Care Assisted Living Facility focuses on personal care support, meal assistance, medication reminders, light household help, comfort, safety, and companionship in a warm, home-like environment."
         className="pt-0"
       >
@@ -178,7 +178,7 @@ export default function HomePage() {
               Resident-Centered Living in Anchorage
             </p>
             <p className="mt-4 font-heading text-[1.8rem] leading-tight text-[#063550] sm:mt-5 sm:text-3xl">
-              Care begins with knowing the individual.
+              Care begins with the individual.
             </p>
             <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
