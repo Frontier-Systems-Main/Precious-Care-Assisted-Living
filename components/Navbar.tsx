@@ -106,7 +106,7 @@ export function Navbar() {
         {isMobileMenuOpen ? (
           <div
             id="mobile-navigation"
-            className="pointer-events-auto mt-3 rounded-[1.75rem] border border-border/60 bg-white/92 p-4 shadow-glow md:hidden"
+            className="pointer-events-auto mt-3 rounded-[1.75rem] border border-border/60 bg-white p-4 shadow-glow md:hidden"
           >
             <nav aria-label="Mobile primary" className="flex flex-col gap-2">
               {NAV_ITEMS.map((item) => {

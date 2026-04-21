@@ -10,7 +10,7 @@ import { Section } from "@/components/Section";
 import { buildMetadata } from "@/lib/constants";
 
 export const metadata = buildMetadata(
-  "Compassionate Assisted Living in Anchorage, Alaska",
+  "Compassionate Care, Close to Home",
   "Explore a warm, family-owned assisted living setting in Anchorage, Alaska with a personalized, home-like approach focused on comfort, safety, and companionship.",
   "/",
 );
@@ -49,7 +49,7 @@ export default function HomePage() {
 
       <Section
         eyebrow="Come see for yourself"
-        title="Compassionate Care, Close to Home"
+        title="A Commitment You Can Feel"
         description="Precious Care is a family-owned assisted living facility in Anchorage, Alaska — offering personalized support, dignity, and a warm, welcoming environment for your loved one."
         className="pt-8"
       >
