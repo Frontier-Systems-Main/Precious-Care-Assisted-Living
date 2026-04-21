@@ -61,7 +61,7 @@ export default function HomePage() {
       <Section
         id="why-us"
         eyebrow="Why families choose us"
-        title="A calm place to begin an important conversation"
+        title="Resident-Centerd Living in Anchorage"
         description="When families start looking for assisted living, they are often balancing trust, emotion, and practical needs at the same time. This site is designed to make the essentials clear without overpromising."
       >
         <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
@@ -70,7 +70,7 @@ export default function HomePage() {
             className="rounded-[2rem] border border-white/60 bg-white/82 p-8 text-center shadow-glow backdrop-blur"
           >
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#c1358e]">
-              A Commitment You Can Feel
+              Support That's Tailored to Each Resident
             </p>
             <p className="mt-5 font-heading text-3xl leading-tight text-foreground">
               Families choose Precious Care because they want more than a place

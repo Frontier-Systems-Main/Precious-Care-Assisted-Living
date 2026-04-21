@@ -35,7 +35,7 @@ export function Hero() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={80}>
-            <h1 className="mt-6 max-w-4xl text-balance font-heading text-4xl leading-[0.98] text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="mt-6 max-w-[18ch] text-balance font-heading text-[2rem] leading-[1.02] text-foreground sm:max-w-4xl sm:text-5xl sm:leading-[0.98] lg:text-6xl">
               {HOME_HERO.headline}
             </h1>
           </ScrollReveal>
