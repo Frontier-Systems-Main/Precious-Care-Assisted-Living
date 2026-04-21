@@ -216,7 +216,7 @@ export default function HomePage() {
 
       <Section
         eyebrow="What the Anchorage community says"
-        title="Real feedback from people in our community"
+        title="Feedback From Real Families"
         description="Here's what the Anchorage community says about our dedication to their loved ones."
         className="pt-0"
       >
