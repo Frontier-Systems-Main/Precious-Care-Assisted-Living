@@ -8,43 +8,50 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    src: "/photos/care-team.jpg",
+    src: "/photos/care-team.webp",
+    thumbSrc: "/photos/care-team-thumb.webp",
     alt: "Care-focused photo for Precious Care Assisted Living Facility",
     label: "Compassionate support",
     description: "Daily care should feel attentive, respectful, and reassuring for both residents and families.",
   },
   {
-    src: "/photos/home-1.png",
+    src: "/photos/home-1.webp",
+    thumbSrc: "/photos/home-1-thumb.webp",
     alt: "Feature photo of Precious Care Assisted Living Facility",
     label: "Home-like comfort",
     description: "A warm residential atmosphere can make assisted living feel more familiar and less clinical.",
   },
   {
-    src: "/photos/home-2.png",
+    src: "/photos/home-2.webp",
+    thumbSrc: "/photos/home-2-thumb.webp",
     alt: "Additional view of Precious Care Assisted Living Facility",
     label: "Personal attention",
     description: "Smaller-scale care settings can make it easier to focus on routines, comfort, and individual needs.",
   },
   {
-    src: "/photos/home-3.png",
+    src: "/photos/home-3.webp",
+    thumbSrc: "/photos/home-3-thumb.webp",
     alt: "Additional room view at Precious Care Assisted Living Facility",
     label: "Daily reassurance",
     description: "Families often look for a place where everyday support feels steady, clear, and thoughtfully handled.",
   },
   {
-    src: "/photos/home-4.png",
+    src: "/photos/home-4.webp",
+    thumbSrc: "/photos/home-4-thumb.webp",
     alt: "Interior details at Precious Care Assisted Living Facility",
     label: "Meaningful connection",
     description: "Companionship and human connection are part of what helps a setting feel genuinely supportive.",
   },
   {
-    src: "/photos/home-6.png",
+    src: "/photos/home-6.webp",
+    thumbSrc: "/photos/home-6-thumb.webp",
     alt: "Interior image for Precious Care Assisted Living Facility",
     label: "Practical care",
     description: "Assistance with meals, routines, and day-to-day needs should be delivered with patience and dignity.",
   },
   {
-    src: "/photos/home-8.png",
+    src: "/photos/home-8.webp",
+    thumbSrc: "/photos/home-8-thumb.webp",
     alt: "Additional bright view of Precious Care Assisted Living Facility",
     label: "Calm environment",
     description: "A peaceful, well-kept setting can help residents and loved ones feel more at ease.",
@@ -111,9 +118,10 @@ export function PhotoCarousel() {
             <Image
               src={slide.src}
               alt={slide.alt}
-              width={455}
-              height={240}
+              width={1600}
+              height={1067}
               priority={index === 0}
+              sizes="(max-width: 639px) 100vw, (max-width: 1024px) 90vw, 1120px"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06293f]/82 via-[#06293f]/24 to-transparent" />
@@ -164,10 +172,10 @@ export function PhotoCarousel() {
             aria-label={`View ${slide.label.toLowerCase()} photo`}
           >
             <Image
-              src={slide.src}
+              src={slide.thumbSrc}
               alt=""
-              width={120}
-              height={80}
+              width={320}
+              height={213}
               className="h-16 w-full object-cover"
             />
           </button>

@@ -73,10 +73,11 @@ export default function ServicesPage() {
             </div>
             <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/10 sm:mt-8 sm:rounded-[1.5rem]">
               <Image
-                src="/photos/home-3.png"
+                src="/photos/home-3.webp"
                 alt="Living space photo for Precious Care Assisted Living Facility"
-                width={6123}
-                height={4082}
+                width={1600}
+                height={1067}
+                sizes="(max-width: 1024px) 100vw, 44vw"
                 className="h-auto w-full object-cover"
               />
             </div>

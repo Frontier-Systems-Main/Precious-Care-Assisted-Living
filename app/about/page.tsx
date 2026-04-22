@@ -79,10 +79,11 @@ export default function AboutPage() {
             </div>
             <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/60 sm:mt-8 sm:rounded-[1.5rem]">
               <Image
-                src="/photos/home-6.png"
+                src="/photos/home-6.webp"
                 alt="Interior photo for Precious Care Assisted Living Facility"
-                width={6082}
-                height={4055}
+                width={1600}
+                height={1067}
+                sizes="(max-width: 1024px) 100vw, 52vw"
                 className="h-auto w-full object-cover"
               />
             </div>

@@ -96,11 +96,12 @@ export function Hero() {
         <div className="grid gap-5">
           <ScrollReveal direction="right" className="relative overflow-hidden rounded-[1.75rem] border border-white/70 shadow-glow sm:rounded-[2rem]">
             <Image
-              src="/photos/care-team.jpg"
+              src="/photos/care-team.webp"
               alt="Care-focused photo for Precious Care Assisted Living Facility"
-              width={5625}
-              height={3750}
+              width={1600}
+              height={1067}
               priority
+              sizes="(max-width: 1024px) 100vw, 48vw"
               className="h-[19rem] w-full object-cover sm:h-[24rem]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06293f]/82 via-[#06293f]/28 to-transparent" />
