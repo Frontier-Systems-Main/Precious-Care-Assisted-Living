@@ -57,7 +57,32 @@ export function Hero() {
             </Button>
             </div>
           </ScrollReveal>
-          <div className="mt-8 grid w-full gap-4 sm:grid-cols-2">
+          <ScrollReveal delay={250} className="mt-5 w-full sm:hidden">
+            <div className="rounded-[1.2rem] border border-[#ecd6e4] bg-white/82 px-4 py-4 text-center shadow-sm backdrop-blur">
+              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.16em] text-[#c1358e]">
+                Family-owned care
+              </p>
+              <p className="mt-2 text-sm leading-6 text-[#35556b]">
+                A smaller home-like setting centered on comfort, dignity, and
+                steady day-to-day support.
+              </p>
+            </div>
+          </ScrollReveal>
+          <div className="mt-4 flex w-full flex-wrap items-center justify-center gap-2 sm:hidden">
+            <a
+              href={BUSINESS.contact.phoneHref}
+              className="inline-flex items-center justify-center rounded-full border border-[#e6d7e2] bg-white/82 px-4 py-2 text-sm font-semibold text-[#063550] shadow-sm"
+            >
+              Call
+            </a>
+            <a
+              href={BUSINESS.contact.emailHref}
+              className="inline-flex items-center justify-center rounded-full border border-[#e6d7e2] bg-white/82 px-4 py-2 text-sm font-semibold text-[#063550] shadow-sm"
+            >
+              Email
+            </a>
+          </div>
+          <div className="mt-8 hidden w-full gap-4 sm:grid sm:grid-cols-2">
             <ScrollReveal delay={260} direction="left">
               <a
                 href={BUSINESS.contact.phoneHref}
@@ -102,7 +127,7 @@ export function Hero() {
               height={1067}
               priority
               sizes="(max-width: 1024px) 100vw, 48vw"
-              className="h-[19rem] w-full object-cover sm:h-[24rem]"
+              className="h-[16.5rem] w-full object-cover sm:h-[24rem]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#06293f]/82 via-[#06293f]/28 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 p-4 text-center text-white sm:p-6">
@@ -112,13 +137,13 @@ export function Hero() {
               <p className="mx-auto mt-2 max-w-md font-heading text-[1.7rem] leading-tight sm:mt-3 sm:max-w-lg sm:text-3xl">
                 Support that feels personal, patient, and reassuring.
               </p>
-              <p className="mt-2 text-sm leading-6 text-white/82 sm:mt-3 sm:text-base sm:leading-7">
+              <p className="mt-2 hidden text-sm leading-6 text-white/82 sm:block sm:mt-3 sm:text-base sm:leading-7">
                 Precious Care is presented as a warm, home-like place where
                 dignity, comfort, and connection remain central to daily life.
               </p>
             </div>
           </ScrollReveal>
-          <div className="grid gap-5 md:grid-cols-[1.05fr_0.95fr]">
+          <div className="hidden gap-5 md:grid md:grid-cols-[1.05fr_0.95fr]">
             <ScrollReveal
               delay={120}
               direction="left"
