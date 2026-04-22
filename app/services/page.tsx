@@ -129,7 +129,13 @@ export default function ServicesPage() {
             </div>
             <ul className="space-y-3 text-base leading-7 text-[#24475f] sm:space-y-4 sm:text-lg sm:leading-8">
               {questions.map((question) => (
-                <li key={question}>{question}</li>
+                <li key={question} className="flex items-start gap-3">
+                  <span
+                    className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#c1358e]"
+                    aria-hidden="true"
+                  />
+                  <span>{question}</span>
+                </li>
               ))}
             </ul>
             <p className="mt-5 text-sm leading-6 text-[#4b6476] sm:mt-6 sm:text-base sm:leading-7">

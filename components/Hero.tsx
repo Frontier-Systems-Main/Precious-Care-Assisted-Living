@@ -173,9 +173,29 @@ export function Hero() {
                 First steps
               </p>
               <ul className="mt-3 space-y-2.5 text-sm leading-6 text-white/80 sm:mt-4 sm:space-y-3 sm:text-base sm:leading-7">
-                <li>Ask practical questions about care and routines</li>
-                <li>See whether the setting feels right for your family</li>
-                <li>Schedule a conversation or visit when ready</li>
+                <li className="flex items-start gap-3 text-left">
+                  <span
+                    className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#ff66c4]"
+                    aria-hidden="true"
+                  />
+                  <span>Ask practical questions about care and routines</span>
+                </li>
+                <li className="flex items-start gap-3 text-left">
+                  <span
+                    className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#ff66c4]"
+                    aria-hidden="true"
+                  />
+                  <span>
+                    See whether the setting feels right for your family
+                  </span>
+                </li>
+                <li className="flex items-start gap-3 text-left">
+                  <span
+                    className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#ff66c4]"
+                    aria-hidden="true"
+                  />
+                  <span>Schedule a conversation or visit when ready</span>
+                </li>
               </ul>
               <div className="mt-4 flex items-start justify-center gap-3 text-white/72 sm:mt-5">
                 <MapPinned className="mt-0.5 h-5 w-5 shrink-0" aria-hidden="true" />
