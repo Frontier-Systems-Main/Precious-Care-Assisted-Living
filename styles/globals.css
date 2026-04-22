@@ -30,6 +30,7 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
   }
 
   body {
@@ -41,6 +42,7 @@
       linear-gradient(180deg, rgba(255, 252, 249, 0.92), rgba(249, 245, 241, 0.74));
     background-attachment: fixed;
     position: relative;
+    text-rendering: optimizeLegibility;
   }
 
   body::before {
@@ -83,6 +85,25 @@
 
   ::selection {
     background: rgba(255, 102, 196, 0.24);
+  }
+
+  @media (max-width: 639px) {
+    body {
+      background-image:
+        radial-gradient(circle at 88% 9%, rgba(123, 176, 214, 0.14), transparent 18%),
+        radial-gradient(circle at 18% 12%, rgba(255, 163, 208, 0.12), transparent 22%),
+        linear-gradient(180deg, rgba(255, 252, 249, 0.96), rgba(249, 245, 241, 0.9));
+      background-attachment: scroll;
+    }
+
+    body::before {
+      opacity: 0.08;
+      background-size: auto, 24px 24px, 28px 28px, 32px 32px;
+    }
+
+    body::after {
+      display: none;
+    }
   }
 }
 
@@ -161,6 +182,12 @@
       opacity: 1;
       transform: none;
       transition: none;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .scroll-reveal {
+      transition-duration: 520ms;
     }
   }
 }

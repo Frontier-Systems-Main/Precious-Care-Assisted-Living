@@ -19,7 +19,7 @@ export function Section({
   children,
 }: SectionProps) {
   return (
-    <section id={id} className={cn("px-4 py-14 sm:px-6 sm:py-20 lg:px-8", className)}>
+    <section id={id} className={cn("px-4 py-12 sm:px-6 sm:py-20 lg:px-8", className)}>
       <div className="mx-auto w-full max-w-7xl">
         <ScrollReveal className="mx-auto max-w-3xl text-center">
           {eyebrow ? (
@@ -27,16 +27,16 @@ export function Section({
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="mt-3 text-balance font-heading text-[2rem] leading-tight text-foreground sm:mt-4 sm:text-4xl lg:text-5xl">
+          <h2 className="mt-3 text-balance font-heading text-[1.8rem] leading-[1.08] text-foreground sm:mt-4 sm:text-4xl lg:text-5xl">
             {title}
           </h2>
           {description ? (
-            <p className="mt-4 text-base leading-7 text-muted-foreground sm:mt-5 sm:text-lg sm:leading-8 lg:text-xl">
+            <p className="mt-4 max-w-[34rem] text-[0.98rem] leading-7 text-muted-foreground sm:mt-5 sm:text-lg sm:leading-8 lg:text-xl">
               {description}
             </p>
           ) : null}
         </ScrollReveal>
-        <div className="mt-10 sm:mt-12">{children}</div>
+        <div className="mt-8 sm:mt-12">{children}</div>
       </div>
     </section>
   );
