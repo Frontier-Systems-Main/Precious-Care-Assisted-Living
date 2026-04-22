@@ -48,7 +48,7 @@ export default function AboutPage() {
       <Section
         eyebrow="About"
         title="A Family-Owned Facility Built on Love and Commitment"
-        description="At Precious Care, we believe every senior deserves to live with dignity, comfort, and genuine connection in a place that truly feels like home."
+        description="We believe every senior deserves dignity, comfort, and real human connection in a place that truly feels like home."
       >
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <ScrollReveal
@@ -60,21 +60,14 @@ export default function AboutPage() {
             </p>
             <div className="mt-4 space-y-4 text-base leading-7 text-muted-foreground sm:mt-6 sm:text-lg sm:leading-8">
               <p>
-                Precious Care Assisted Living was founded on a simple but
-                powerful belief: seniors deserve to live in an environment
-                filled with warmth, respect, and meaningful personal attention
-                — not just clinical care.
+                Precious Care was founded on a simple belief: seniors deserve
+                warmth, respect, and meaningful personal attention, not just
+                routine care.
               </p>
               <p>
-                As a family-owned facility, we bring the values of a close-knit
-                household to everything we do. Our residents are not just
-                clients — they are members of our extended family, and we take
-                that responsibility to heart every single day.
-              </p>
-              <p>
-                Situated in Anchorage, Alaska, our home is close to the
-                community, accessible to families, and connected to the city
-                and surroundings that make Alaska so special.
+                As a family-owned facility in Anchorage, we bring the values of
+                a close-knit household to everyday life and stay closely
+                connected to the community families know and love.
               </p>
             </div>
             <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/60 sm:mt-8 sm:rounded-[1.5rem]">
@@ -109,10 +102,9 @@ export default function AboutPage() {
                 Caring for each person as an individual
               </h2>
               <p className="mt-3 max-w-md text-sm leading-6 text-white/78 sm:mt-4 sm:text-base sm:leading-7">
-                Our mission is to provide compassionate, personalized assisted
-                living care that honors each resident's dignity, supports their
-                comfort, and nurtures a sense of belonging — all within a safe,
-                home-like environment in Anchorage, Alaska.
+                Our mission is to provide compassionate assisted living that
+                honors dignity, supports comfort, and creates a genuine sense
+                of belonging in a safe home-like environment.
               </p>
 
               <div className="mt-6 rounded-[1.35rem] bg-white/8 p-4 backdrop-blur-sm sm:mt-8 sm:rounded-[1.5rem] sm:p-5">
@@ -186,9 +178,9 @@ export default function AboutPage() {
             </p>
             <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
-                Families can visit more easily, and residents can remain
-                connected to the routines, relationships, and local familiarity
-                that bring comfort.
+                Families can visit more easily, and residents can stay close to
+                the routines, relationships, and local familiarity that bring
+                comfort.
               </p>
               <p>
                 Our location at {BUSINESS.address} reflects the kind of setting

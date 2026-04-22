@@ -62,7 +62,7 @@ export default function HomePage() {
         id="why-us"
         eyebrow="Why families choose us"
         title="Resident-Centerd Living in Anchorage"
-        description="When families start looking for assisted living, they are often balancing trust, emotion, and practical needs at the same time. This site is designed to make the essentials clear without overpromising."
+        description="Families comparing assisted living are balancing trust, comfort, and practical care needs at the same time. This section makes those priorities easier to understand at a glance."
       >
         <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
           <ScrollReveal
@@ -77,9 +77,8 @@ export default function HomePage() {
             </p>
             <div className="mt-4 space-y-4 text-base leading-7 text-muted-foreground sm:mt-6 sm:text-lg sm:leading-8">
               <p>
-                Families choose Precious Care because they want more than a
-                place to live — they want a community where their loved one is
-                genuinely cared for and respected.
+                Families want more than availability. They want a place where
+                their loved one feels safe, known, and respected.
               </p>
             </div>
             <ul className="mt-5 space-y-3 text-left text-sm leading-6 text-[#4b6476] sm:mt-6 sm:text-base sm:leading-7">
@@ -115,7 +114,7 @@ export default function HomePage() {
                     key={item.title}
                     delay={index * 70}
                     direction="up"
-                    className="flex flex-col items-center gap-4 rounded-[1.35rem] border border-white/10 bg-white/6 p-4 text-center backdrop-blur-sm sm:rounded-[1.5rem] sm:p-5"
+                    className="flex items-start gap-4 rounded-[1.35rem] border border-white/10 bg-white/6 p-4 text-left backdrop-blur-sm sm:flex-col sm:items-center sm:rounded-[1.5rem] sm:p-5 sm:text-center"
                   >
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/10 text-white">
                       <Icon className="h-6 w-6" aria-hidden="true" />
@@ -139,7 +138,7 @@ export default function HomePage() {
       <Section
         eyebrow="Care philosophy"
         title="Supportive Living, Every Day"
-        description="Precious Care Assisted Living Facility focuses on personal care support, meal assistance, medication reminders, light household help, comfort, safety, and companionship in a warm, home-like environment."
+        description="Daily life at Precious Care is built around practical support, comfort, safety, and companionship in a warm home-like setting."
         className="pt-0"
       >
         <div className="grid gap-6 lg:grid-cols-[0.98fr_1.02fr]">
@@ -159,7 +158,7 @@ export default function HomePage() {
                 <ScrollReveal
                   key={item}
                   delay={index * 80}
-                  className="flex flex-col items-center gap-3 rounded-[1.35rem] border border-white/10 bg-white/6 p-4 text-center sm:gap-4 sm:rounded-[1.5rem] sm:p-5"
+                  className="flex items-center gap-3 rounded-[1.35rem] border border-white/10 bg-white/6 p-4 text-left sm:flex-col sm:gap-4 sm:rounded-[1.5rem] sm:p-5 sm:text-center"
                 >
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ff66c4] font-semibold text-[#063550]">
                     {index + 1}
@@ -182,17 +181,15 @@ export default function HomePage() {
             </p>
             <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
-                At Precious Care, we believe that quality care starts with truly
-                knowing each resident — their life story, their preferences,
-                and what brings them comfort and joy. Our home-like setting in
-                Anchorage, Alaska is designed to support independence while
-                ensuring that help is always nearby.
+                Quality care starts with knowing the resident — their story,
+                their preferences, and what helps them feel comfortable. Our
+                home-like setting is designed to support independence while
+                keeping help close by.
               </p>
               <p>
-                We work closely with families to understand what matters most
-                and to make the transition to assisted living as smooth and
-                reassuring as possible. You'll always be kept informed, and
-                your voice will always matter here.
+                We work closely with families so the transition feels smoother,
+                communication stays open, and what matters most continues to
+                shape daily life here.
               </p>
             </div>
           </ScrollReveal>

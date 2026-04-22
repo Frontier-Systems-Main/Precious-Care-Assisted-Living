@@ -43,7 +43,7 @@ export default function ServicesPage() {
       <Section
         eyebrow="Our Care Approach"
         title="Support That's Tailored to Each Resident"
-        description="We offer a range of supportive services designed to meet residents where they are — providing the right level of assistance while honoring their independence and preferences."
+        description="We offer supportive services that meet residents where they are, providing the right level of help while honoring independence and personal preferences."
       >
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <ScrollReveal
@@ -61,14 +61,9 @@ export default function ServicesPage() {
                 feels familiar and supportive from day one.
               </p>
               <p>
-                We believe the people who know a resident best are their
-                family. That's why we actively involve families in care
-                conversations, keep communication open, and welcome visits and
-                engagement.
-              </p>
-              <p>
-                Our goal is not just to provide assistance — it is to help each
-                resident live as fully, comfortably, and joyfully as possible.
+                We believe families know a resident best. That is why we keep
+                communication open, welcome involvement, and work together on
+                what daily support should feel like.
               </p>
             </div>
             <div className="mt-6 overflow-hidden rounded-[1.25rem] border border-white/10 sm:mt-8 sm:rounded-[1.5rem]">
@@ -116,7 +111,7 @@ export default function ServicesPage() {
       <Section
         eyebrow="For families evaluating options"
         title="Questions to ask when choosing assisted living"
-        description="A thoughtful decision usually starts with the right questions. These prompts can help families compare settings in a practical, respectful way."
+        description="A thoughtful decision starts with the right questions. These prompts can help families compare settings in a practical, respectful way."
         className="pt-0"
       >
         <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
@@ -157,13 +152,12 @@ export default function ServicesPage() {
             </p>
             <div className="mt-4 space-y-4 text-base leading-7 text-[#35556b] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
-                Families often need straightforward information first, but they
-                also need a sense of whether a place feels calm, respectful, and
-                personal.
+                Families need clear information, but they also need to know
+                whether a place feels calm, respectful, and personal.
               </p>
               <p>
-                That is why this page focuses on clear support categories while
-                still making room for the more human side of the decision.
+                That is why this page focuses on practical support categories
+                while still making room for the human side of the decision.
               </p>
             </div>
           </ScrollReveal>
