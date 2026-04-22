@@ -37,7 +37,7 @@ export default function ContactPage() {
       description="Families often want to ask a few questions before deciding on next steps. Use the information below to call, email, send a message, or pull up directions."
     >
       <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="space-y-6">
+        <div className="order-2 space-y-5 sm:space-y-6 lg:order-1">
           <ScrollReveal
             direction="left"
             className="rounded-[1.7rem] bg-[#063550] p-5 text-white shadow-glow sm:rounded-[2rem] sm:p-6"
@@ -131,7 +131,7 @@ export default function ContactPage() {
           </ScrollReveal>
         </div>
 
-        <ScrollReveal delay={120} direction="right">
+        <ScrollReveal delay={120} direction="right" className="order-1 lg:order-2">
           <ContactForm />
         </ScrollReveal>
       </div>
