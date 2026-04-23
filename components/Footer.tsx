@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 import { BUSINESS, NAV_ITEMS } from "@/lib/constants";
 
@@ -78,6 +78,20 @@ export function Footer() {
                   className="transition-colors hover:text-white"
                 >
                   {BUSINESS.contact.email}
+                </a>
+              </div>
+              <div className="flex items-start justify-start gap-3">
+                <Linkedin
+                  className="mt-1 h-5 w-5 shrink-0 text-[#c1358e]"
+                  aria-hidden="true"
+                />
+                <a
+                  href="https://www.linkedin.com/company/precious-care-assisted-living-facility-llc"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-colors hover:text-white"
+                >
+                  LinkedIn
                 </a>
               </div>
             </div>
